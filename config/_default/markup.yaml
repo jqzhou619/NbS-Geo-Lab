@@ -1,0 +1,3 @@
+markup:
+  sass:
+    transpiler: dartsass
