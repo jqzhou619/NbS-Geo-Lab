@@ -1,0 +1,12 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  {{ .Content }}
+  {{ with site.GetPage "section" "post" }}
+    <h2>最新新闻</h2>
+    <ul>
+    {{ range first 5 .Pages.ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

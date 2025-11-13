@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ block "title" . }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+
+  {{/* 只处理我们自己的最小 CSS，不去拼主题 SCSS/CSS，避免 Concat 报错 */}}
+  {{ $css := resources.Get "css/custom.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+</head>
+<body>
+  <nav style="max-width:1100px;margin:0 auto;padding:1rem;border-bottom:1px solid #eee">
+    {{ range .Site.Menus.main }}<a href="{{ .URL }}" style="margin-right:1rem">{{ .Name }}</a>{{ end }}
+  </nav>
+
+  <main style="max-width:1100px;margin:0 auto;padding:1rem">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer style="max-width:1100px;margin:2rem auto 0;padding:1rem;border-top:1px solid #eee;color:#666">
+    © {{ now.Year }} {{ .Site.Title }}
+  </footer>
+</body>
+</html>
