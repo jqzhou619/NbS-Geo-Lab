@@ -183,27 +183,27 @@ sections:
 
   - block: markdown
     content:
-      title:
-      subtitle:
+      title: 
+      subtitle: 
       text: |
-        <div class="wechat-section">
-          <div class="wechat-image">
-            <img src="/media/wechat.jpg" alt="NbS-Geo Lab WeChat QR">
-          </div>
-
-          <div class="wechat-intro">
-            <h3>Follow our WeChat official account</h3>
-            <p>
-              Welcome to follow our WeChat official account. Here we share updates on
-              NbS-Geo Lab’s research, field campaigns, and opportunities for students
-              and collaborators.
-            </p>
-            <p>
-              You are very welcome to contact us for potential cooperation on
-              landslides, eco-engineering, and nature-based solutions for geohazards.
-            </p>
-          </div>
+        <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+            <img src="/media/wechat.jpg"
+               alt="NbS-Geo Lab WeChat QR"
+               style="max-width: 150px; width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;" />
         </div>
+
+        <h3 style="max-width: 1000px; margin: 0 auto; text-align: justify;">Follow our WeChat official account</h3>
+
+        <p style="max-width: 1000px; margin: 0 auto; text-align: justify;">
+          Welcome to follow our WeChat official account. Here we share updates on NbS-Geo Lab’s research, field campaigns, and opportunities for students and collaborators.
+        </p>
+        <p style="max-width: 1000px; margin: 0 auto; text-align: justify;">
+          You are very welcome to contact us for potential cooperation on landslides, eco-engineering, and nature-based solutions for geohazards.
+        </p>
+
+
+
+
     design:
       columns: '1'
 
