@@ -1,3 +1,7 @@
 markup:
   sass:
     transpiler: dartsass
+
+goldmark:
+  renderer:
+    unsafe: true   # 一定要是 true，才允许 HTML 渲染
