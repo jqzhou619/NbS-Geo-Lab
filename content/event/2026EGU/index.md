@@ -74,4 +74,6 @@ Slides can be added in a few ways:
 - Assessing the social and economic vulnerability, resilience and trade-offs of adaptation under climate change. 
 - Evaluate natural and sustainable solutions as strategies for climate resilience planning.
 
+Registration link: https://meetingorganizer.copernicus.org/EGU26/session/57761
+
 
