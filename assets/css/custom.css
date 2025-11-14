@@ -9,14 +9,6 @@ nav{max-width:var(--maxw);margin:0 auto;padding:.75rem 1rem;border-bottom:1px so
 footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top:1px solid #eee}
 
 
-.centered-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;  /* 调整图片大小 */
-  height: auto;
-}
-
 /* 头像容器：居中对齐 */
 .profile-photo {
   text-align: center;
@@ -39,6 +31,20 @@ footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top
 }
 
 /* 在导航栏 logo 右边显示实验室名称 */
+/* 让 logo 和文字并排显示 */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;      /* logo 和文字之间留点间距 */
+}
+
+/* 控制导航栏里 logo 的大小和形状 */
+.navbar-brand img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;   /* 做成圆形头像效果 */
+}
+
 .navbar-brand::after {
   content: " NbS-Geo Lab";   /* 这里写你想显示的名字 */
   display: inline-block;
@@ -47,4 +53,40 @@ footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top
   font-weight: 600;
   color: #ffffff;            /* 和导航栏其它文字一样的白色 */
   vertical-align: middle;
+}
+
+
+/* 首页：微信二维码 左图右文布局 */
+.home-wechat {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* 让整块居中 */
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.home-wechat-left img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.home-wechat-right {
+  max-width: 650px;
+  text-align: justify; /* 文本两端对齐 */
+}
+
+/* 小屏幕（手机）时改为上下排列 */
+@media (max-width: 768px) {
+  .home-wechat {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-wechat-right {
+    text-align: justify;
+  }
 }

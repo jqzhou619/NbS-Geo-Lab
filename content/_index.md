@@ -180,4 +180,31 @@ sections:
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
     design:
       columns: '1'
+
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        <div class="home-wechat">
+          <div class="home-wechat-left">
+            <img src="/media/wechat.jpg" alt="WeChat QR code">
+          </div>
+
+          <div class="home-wechat-right">
+            <h3>Follow our WeChat official account</h3>
+            <p>
+              Welcome to follow our WeChat official account. Here we share updates on
+              NbS-Geo Lab’s research, field campaigns, and opportunities for students
+              and collaborators.
+            </p>
+            <p>
+              You are very welcome to contact us for potential cooperation on
+              landslides, eco-engineering, and nature-based solutions for geohazards.
+            </p>
+          </div>
+        </div>
+    design:
+      columns: '1'
+
 ---
