@@ -17,3 +17,24 @@ footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top
   height: auto;
 }
 
+/* 头像容器：居中对齐 */
+.profile-photo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 头像图片本身：限制大小、可选圆形 */
+.profile-photo img {
+  max-width: 260px;      /* 自己根据需要调大小 */
+  width: 100%;
+  height: auto;
+  border-radius: 50%;    /* 想要圆形就保留，不想要圆形就删掉这一行 */
+}
+
+/* 简介文字：左对齐 / 或两端对齐 */
+.profile-text {
+  text-align: left;      /* 如果想两端对齐，就改成 justify */
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
