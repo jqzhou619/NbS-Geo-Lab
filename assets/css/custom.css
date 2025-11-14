@@ -33,7 +33,7 @@ footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top
 
 /* 简介文字：左对齐 / 或两端对齐 */
 .profile-text {
-  text-align: left;      /* 如果想两端对齐，就改成 justify */
+  text-align: justify;      /* 如果想两端对齐，就改成 justify */
   line-height: 1.6;
   margin-top: 0.5rem;
 }

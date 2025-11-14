@@ -60,15 +60,20 @@ sections:
       title: Ni An
       subtitle: Principal Investigator
       text: |
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <img src="/media/anni.jpg"
-              alt="Ni An"
-              style="max-width: 260px; width: 100%; height: auto; border-radius: 8px;">
-        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem;">
 
-        <p style="text-align: justify;">
-        Doctoral supervisor, national-level high-level overseas young talent, and outstanding young research talent. Graduated with a Ph.D. in Geotechnical Engineering from École Nationale des Ponts et Chaussées.
-        </p>
+            <!-- 头像 -->
+            <img src="/media/anni.jpg"
+                alt="Ni An"
+                style="max-width: 260px; width: 100%; height: auto; border-radius: 8px;">
+
+            <!-- 简介 -->
+            <p style="margin-top: 1rem; max-width: 800px; text-align: justify;">
+              Doctoral supervisor, national-level high-level overseas young talent, and outstanding young research talent.
+              Graduated with a Ph.D. in Geotechnical Engineering from École Nationale des Ponts et Chaussées.
+            </p>
+
+          </div>
 
 
   - block: markdown
