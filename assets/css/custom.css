@@ -38,3 +38,13 @@ footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;color:#666;border-top
   margin-top: 0.5rem;
 }
 
+/* 在导航栏 logo 右边显示实验室名称 */
+.navbar-brand::after {
+  content: " NbS-Geo Lab";   /* 这里写你想显示的名字 */
+  display: inline-block;
+  margin-left: 0.5rem;       /* logo 和文字的间距 */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;            /* 和导航栏其它文字一样的白色 */
+  vertical-align: middle;
+}
