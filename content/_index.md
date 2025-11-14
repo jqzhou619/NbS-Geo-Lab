@@ -186,12 +186,12 @@ sections:
       title:
       subtitle:
       text: |
-        <div class="home-wechat">
-          <div class="home-wechat-left">
-            <img src="/media/wechat.jpg" alt="WeChat QR code">
+        <div class="wechat-section">
+          <div class="wechat-image">
+            <img src="/media/wechat.jpg" alt="NbS-Geo Lab WeChat QR">
           </div>
 
-          <div class="home-wechat-right">
+          <div class="wechat-intro">
             <h3>Follow our WeChat official account</h3>
             <p>
               Welcome to follow our WeChat official account. Here we share updates on
